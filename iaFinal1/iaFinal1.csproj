@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2EB6AC41-1322-4449-9D43-601806C66A0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iaFinal1</RootNamespace>
+    <AssemblyName>iaFinal1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.4.0, Culture=neutral, PublicKeyToken=70866663edbc6595, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.4\lib\net40\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashierCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierCalendar.Designer.cs">
+      <DependentUpon>CashierCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierHomePage.Designer.cs">
+      <DependentUpon>CashierHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierSalary.Designer.cs">
+      <DependentUpon>CashierSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierSettings.Designer.cs">
+      <DependentUpon>CashierSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierShift.Designer.cs">
+      <DependentUpon>CashierShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierShiftHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierShiftHistory.Designer.cs">
+      <DependentUpon>CashierShiftHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStaff.Designer.cs">
+      <DependentUpon>DeleteStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DutyHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DutyHistory.Designer.cs">
+      <DependentUpon>DutyHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsForm.Designer.cs">
+      <DependentUpon>EventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerCalender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerCalender.Designer.cs">
+      <DependentUpon>ManagerCalender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerCOD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerCOD.Designer.cs">
+      <DependentUpon>ManagerCOD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerFuelPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerFuelPrices.Designer.cs">
+      <DependentUpon>ManagerFuelPrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHomePage.Designer.cs">
+      <DependentUpon>ManagerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerSettings.Designer.cs">
+      <DependentUpon>ManagerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaySlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaySlip.Designer.cs">
+      <DependentUpon>PaySlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ManagerStaffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStaffDetails.Designer.cs">
+      <DependentUpon>ManagerStaffDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDuty.Designer.cs">
+      <DependentUpon>ReportDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CashierCalendar.resx">
+      <DependentUpon>CashierCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierHomePage.resx">
+      <DependentUpon>CashierHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierSalary.resx">
+      <DependentUpon>CashierSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierSettings.resx">
+      <DependentUpon>CashierSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierShift.resx">
+      <DependentUpon>CashierShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierShiftHistory.resx">
+      <DependentUpon>CashierShiftHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStaff.resx">
+      <DependentUpon>DeleteStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DutyHistory.resx">
+      <DependentUpon>DutyHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsForm.resx">
+      <DependentUpon>EventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerCalender.resx">
+      <DependentUpon>ManagerCalender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerCOD.resx">
+      <DependentUpon>ManagerCOD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerFuelPrices.resx">
+      <DependentUpon>ManagerFuelPrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHomePage.resx">
+      <DependentUpon>ManagerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSettings.resx">
+      <DependentUpon>ManagerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaySlip.resx">
+      <DependentUpon>PaySlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ManagerStaffDetails.resx">
+      <DependentUpon>ManagerStaffDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDuty.resx">
+      <DependentUpon>ReportDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
